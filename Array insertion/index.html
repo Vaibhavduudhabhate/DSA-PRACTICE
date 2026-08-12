@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ARRAY INSERTION</title>
+</head>
+<body>
+
+
+  <script>
+    let arr = [11, 23, 36, 434, 523];
+    let newel = 20;
+    let position = 3;
+    console.log(arr);
+
+    for (let i = arr.length - 1; i >= 0; i--) {
+        if(i>=position){
+            arr[i+1] = arr[i];
+            if(i === position){
+                arr[i] = newel;
+            }
+        } 
+    }
+    console.log(arr)
+  </script>      
+</body>
+</html>
