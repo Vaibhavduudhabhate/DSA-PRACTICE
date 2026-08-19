@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ARRAY MERGING</title>
+</head>
+<body>
+
+  <script>
+    let data = [11, 23, 36, 434, 523];
+    let data2 = [11, 23, 36, 434, 523];
+    let data3 = [];
+
+    for(let i = 0; i < data.length; i++){
+        data3[i] = data[i];
+    }
+    for(let i = 0; i < data2.length; i++){
+        data3[data.length + i] = data2[i];
+    }
+
+    // advance and best option is 
+    let data4 = [...data, ...data2];
+
+    console.log(data3)
+    console.log(data4)
+  </script>      
+</body>
+</html>
