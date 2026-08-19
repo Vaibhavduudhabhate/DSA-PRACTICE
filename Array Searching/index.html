@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ARRAY SEARCHING</title>
+</head>
+<body>
+
+
+  <script>
+    let arr = [11, 23, 36, 434, 523];
+    let position = 36;
+    let index = undefined;
+    for(let i = 0; i < arr.length - 1; i++){
+        if(arr[i] === position){
+            console.log("Element found at index: " + i);
+            index = i;
+            break;
+        }
+    }    
+    console.log(index)
+  </script>      
+</body>
+</html>
