@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ARRAY RECURSION</title>
+</head>
+<body>
+
+  <script>
+    // function Apple(x){
+    //     console.log(x);
+    //     if(x < 10){
+    //         Apple(x+1);
+    //     }
+    // }
+    // let data = 0;
+    // Apple(data);
+
+    function factorial(n){
+        if(n == 0){
+            return 1;
+        }else{
+            return n * factorial(n-1);
+        }
+    }
+    let data2 = 5;
+    console.log(factorial(data2));
+  </script>      
+</body>
+</html>
