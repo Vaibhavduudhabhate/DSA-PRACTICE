@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IN-DIRECT RECURSION</title>
+</head>
+<body>
+
+  <script>
+    let money = 100;
+    let totalApple = 0;
+
+    function buyApple(x){
+        if(x > 0){
+            console.log("Money: " + x ,"RS" ,totalApple);
+            buyMore(x);
+        }else{
+            console.log("dont have money " + totalApple);
+        }
+    }
+
+    function buyMore(x){
+        totalApple++;
+        buyApple(x - 5);
+    }
+
+    buyApple(money);
+  </script>      
+</body>
+</html>
